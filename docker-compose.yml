@@ -1,0 +1,11 @@
+﻿version: '3.4'
+
+services:
+  seq:
+    image: datalust/seq:latest
+    container_name: seq
+    ports:
+      - "5341:80"
+    restart: unless-stopped
+    environment:
+      ACCEPT_EULA: 'Y'
